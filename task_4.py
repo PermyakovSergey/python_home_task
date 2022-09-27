@@ -14,4 +14,3 @@ elif num_qarter == 3:
     print('x < 0 and y < 0')
 elif num_qarter == 4:
     print('x > 0 and y < 0:')
-
