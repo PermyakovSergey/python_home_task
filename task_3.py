@@ -5,16 +5,16 @@
 # - x=2; y=4-> 1
 # - x=-34; y=-30 -> 3
 
-x = float(input('enter x != 0: '))
-y = float(input('enter y != 0: '))
+x = int(input('enter x != 0: '))
+y = int(input('enter y != 0: '))
 
-if x != 0 and y != 0:
-    if x > 0 and y > 0:
-        print('1')
-    elif x > 0 and y < 0:
-        print('4')
-    elif x < 0 and y < 0:
-        print('3')
-    elif x < 0 and y > 0:
-        print('2')
-else: print('wrong')
+if x > 0 and y > 0:
+    print('1')
+elif x > 0 and y < 0:
+    print('4')
+elif x < 0 and y < 0:
+    print('3')
+elif x < 0 and y > 0:
+    print('2')
+else:
+    print('wrong number')

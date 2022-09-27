@@ -5,21 +5,12 @@
 # - 7 -> да
 # - 1 -> нет
 
-number = int(input('enter the number of the week day: '))
-
-if number == 1:
+number = input('enter the number of the week day: ')
+while number not in ('1', '2', '3', '4', '5', '6', '7'):
+    print('there is no such day of the week')
+    number = input('enter the number of the week day: ')
+number = int(number)
+if number > 0 and number < 6:
     print('no')
-elif number == 2:
-    print('no')
-elif number == 3:
-    print('no')
-elif number == 4:
-    print('no')
-elif number == 5:
-    print('no')
-elif number == 6:
-    print('yes')
-elif number == 7:
-    print('yes')
 else:
-    print('wrong number of day')
+    print('yes')
