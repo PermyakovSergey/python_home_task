@@ -10,7 +10,7 @@
 
 number_of_el = 5
 
-first_pos = input(f'enter the first number 1 zero to {number_of_el}: ')
+first_pos = input(f'enter the first number from 1 to {number_of_el}: ')
 while not (first_pos.isdigit() and int(first_pos) in range(1, (number_of_el + 1))):
     first_pos = input(f'Wrong input, enter the first number from 1 to {number_of_el}: ')
 first_pos = int(first_pos)
@@ -27,11 +27,10 @@ for i in range(-number_of_el, number_of_el + 1):
 print(
     f'Position one: {first_pos}\n' +
     f'Position two: {second_pos}\n' +
-    f'Number of elements: {number_of_el}\n' +
+    f'Number of elements: {number_of_el} or {number_of_el*2 + 1}?\n' +
     f'{list_of_el}\n'
     f'{list_of_el[first_pos - 1] * list_of_el[second_pos - 1]}'
 )
-# как в примере, но в списке не N элементов :)
 
 # Старое условие:
 # Задайте список из N элементов, заполненных числами из промежутка [-N, N]. 

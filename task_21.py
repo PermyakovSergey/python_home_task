@@ -5,7 +5,6 @@
 # - 198.45 -> 27
 
 number = (input('enter the float number: '))
-summ_of_numbers = 0
 
 def isfloat(value):
     try:
@@ -16,6 +15,8 @@ def isfloat(value):
 
 while not isfloat(number):
     number = (input('Wrong input, enter the float number: '))
+
+summ_of_numbers = 0
 
 for i in number:
     if not i.isdigit():
