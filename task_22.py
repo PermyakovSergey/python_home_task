@@ -6,7 +6,7 @@
 
 number = input('enter the number > 0: ')
 while not (number.isdigit() and int(number) != 0):
-    number = input('enter the number > 0: ')
+    number = input('Wrong input, enter the number > 0: ')
 number = int(number)
 
 product = 1
@@ -20,5 +20,8 @@ for i in range(1, number + 1):
     if i < number:
         text = text + '*' + str(i + 1)
         comment.append(text)
-t = tuple(comment) # чтоб как в примере - с круглыми скобками :)
-print(f'набор произведений чисел от 1 до N:\n{product_set} {t}')
+
+like_in_example = tuple(comment) # чтоб c круглыми скобками и без кавычек :)
+like_in_example = str(like_in_example)
+like_in_example = str(like_in_example.replace('\'', ''))
+print(f'набор произведений чисел от 1 до N:\n{product_set} {like_in_example}')
