@@ -8,7 +8,7 @@ for i in range(size):
     arr.append(randint(0, 100))
 print(arr)
 arr_m = []
-arr_m.append(arr[(randint(0 , len(arr) - 1))])
+arr_m.append(arr[(randint(1 , len(arr) - 1))])
 
 def func(arr1, arr2):
     if (len(arr1) == len(arr2)): print(arr2)
