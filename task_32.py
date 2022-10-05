@@ -5,7 +5,7 @@
 # - [2, 3, 5, 6] => [12, 15]
 
 my_list = [2, 3, 4, 5, 6]
-print_list = []
+product_pairs = []
 for i in range((len(my_list) + 1) // 2): # + 1 - чтоб как в примере - перемножается элемент без пары сам на себя
-    print_list.append(my_list[i] * my_list[-1 - i])
-print(f'{my_list} => {print_list}')
+    product_pairs.append(my_list[i] * my_list[-1 - i])
+print(f'{my_list} => {product_pairs}')

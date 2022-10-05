@@ -4,9 +4,9 @@
 # - [2, 3, 5, 9, 3] -> на нечётных позициях элементы 3 и 9, ответ: 12
 
 my_list = [2, 3, 5, 9, 3]
-my_sum = 0
+sum_pos = 0
 for i in range(len(my_list)):
     if i % 2:
-        my_sum += my_list[i]
+        sum_pos += my_list[i]
 
-print(f'{my_list} -> ответ: {my_sum}')
+print(f'ответ: {sum_pos}')

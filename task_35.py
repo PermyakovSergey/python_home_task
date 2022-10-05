@@ -4,23 +4,21 @@
 
 from math import pow
 
-n = 8
-
 def fib(n):
     if n == 0: return 0
-    if n == 1:
-        return 1
-    else:
-        return fib(n - 1) + fib(n - 2)
+    if n == 1: return 1
+    else: return fib(n - 1) + fib(n - 2)
 
 def fib_neg(n):
     if n == 0: return 0
     if n == 1: return 1
     else: return fib_neg(n + 2) - fib_neg(n + 1)
 
+k = 8
 f_list = []
-for i in range(n+1):
-    if i != 0:
+
+for i in range(k+1):
+    if i != 0: # чтобы не было двух нулей
         f_list.insert(0, fib_neg(-i))
     f_list.append(fib(i))
 
