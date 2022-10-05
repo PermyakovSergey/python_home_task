@@ -18,7 +18,7 @@ print(f'Для n = {n}: {formula_list} -> {sum_of_elements}')
 formula_dict = {}
 sum_of_values = 0
 for i in range(1, n + 1):
-    formula_dict[i] = round((1 + 1/i)**i)
+    formula_dict[i] = round(((1 + 1/i)**i), 2)
     sum_of_values += formula_dict[i]
 
 print(f'Для n = {n} {formula_dict} -> {sum_of_values}')
