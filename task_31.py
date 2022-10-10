@@ -5,8 +5,10 @@
 
 my_list = [2, 3, 5, 9, 3]
 sum_pos = 0
-for i in range(len(my_list)):
-    if i % 2:
-        sum_pos += my_list[i]
 
+# for i in range(len(my_list)):
+#     if i % 2:
+#         sum_pos += my_list[i]
+
+for i in range(1,len(my_list),2): sum_pos += my_list[i]
 print(f'ответ: {sum_pos}')
