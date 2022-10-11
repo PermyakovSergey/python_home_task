@@ -15,10 +15,3 @@ for el in for_comparison:
         res_list.append(el)
 
 print(res_list)
-
-
-
-
-
-
-
