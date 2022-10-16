@@ -19,8 +19,6 @@ while not isfloat(number):
 summ_of_numbers = 0
 
 for i in number:
-    if not i.isdigit():
-        continue
     if i.isdigit():
         summ_of_numbers += int(i)
 

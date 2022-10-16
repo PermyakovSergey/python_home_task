@@ -15,7 +15,7 @@ while not (k.isdigit() and int(k) > 0):
 nat_deg = int(k) # для работы, k сохраним для вывода
 variable = 'x'
 
-def rand_int(): return randint(0, 2) # для экспериментов с 0 и 1
+def rand_int(): return randint(0, 100) # для экспериментов с 0 и 1
 
 with open('polynominal.txt', 'w') as data: # для очистки файла
     data.close()
@@ -42,7 +42,7 @@ while nat_deg > 0:
 
 # проверка: многочлен ли? Многочлен — это сумма одночленов, так что пример 10*x² = 0 - неверный
 # и вывод результата
-if os.stat("polynominal.txt").st_size == 0: # непонятное пригодилось еще раз :)
+if os.stat("polynominal.txt").st_size == 0:
     print('Все коэффициенты равны нулю')
 else:
     with open('polynominal.txt', 'r+') as data:

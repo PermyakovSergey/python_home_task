@@ -1,15 +1,15 @@
 # Реализуйте алгоритм перемешивания списка.
 
-from random import randint
+# from random import randint
 
-size = 5
-arr = []
-for i in range(size):
-    arr.append(randint(-100, 100))
-print(arr)
+# size = 5
+# arr = []
+# for i in range(size):
+#     arr.append(randint(-100, 100))
+# print(arr)
 
-arr_mix = list(set(arr))
-print(arr_mix)
+# arr_mix = list(set(arr))
+# print(arr_mix)
 
 # СПАСИБО за подсказку, плохо конечно что удаляет "повторы", но
 # через рекурсию тоже иногда "ломается" программа :)
@@ -34,3 +34,19 @@ print(arr_mix)
 #         else: mix_list(arr_in, arr_out)
 
 # mix_list(arr, arr_mixed)
+
+from random import randint
+
+size = 5
+arr = []
+for i in range(size): arr.append(randint(0, 100))
+print(arr)
+
+arr_mixed = []
+while size > 1:
+    rand_int = randint(1, size-1)
+    arr_mixed.append(arr[rand_int])
+    arr.pop(rand_int)
+    size -= 1
+else: arr_mixed.append(arr[0])
+print(arr_mixed)

@@ -14,3 +14,6 @@ bin_num = ''
 for i in range(len(temp_number)):
     bin_num += temp_number[-i-1]
 print(f'Number in binary -> {bin_num}')
+
+# b = format(number, 'b')
+# print(b)
