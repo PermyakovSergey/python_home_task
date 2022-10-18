@@ -10,7 +10,8 @@ while d < 1:
     count += 1
 print(round(number, count))
 
-# исходя из примера, к числу pi не применили функцию round(), возможно ниже решение "правильнее"
+# исходя из примера, к числу pi не применили функцию round(), round(pi, count) = 3.142,
+# возможно ниже решение "правильнее"
 # from cmath import pi
 # print(round(pi, count))
 not_round_num = int(number) + int((number % 1) * 10**count) / 10**count

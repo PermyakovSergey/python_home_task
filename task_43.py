@@ -2,8 +2,9 @@
 # элементов исходной последовательности.
 
 my_list = list(str(11822355734))
+print(my_list)
+
 for_comparison = list(set(my_list))
-print((for_comparison))
 res_list = []
 
 for el in for_comparison:
