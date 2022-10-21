@@ -28,7 +28,6 @@ def turn():
 k = turn()
 
 print('In one move, you can pick up no more than 28 candies\n')
-
 while candyes > 28:
     for players in range(1, 3):
 
@@ -49,11 +48,11 @@ while candyes > 28:
             #     takes = 27
             # else: takes = 28
 
-            if 58 < candyes <= 86: # Я даже у такого без калькулятора не выиграю :)
-                print('Looks like I Won')
+            if 58 < candyes <= 86:
+                print('Looks like I Won') # Интеллектище! :)
                 takes = candyes - 58
 
-            if candyes < 58: # Это оставить - норм :)
+            if candyes < 58:
                 takes = candyes - 29
             if candyes == 29:
                 print('Looks like I lost')
@@ -68,6 +67,7 @@ while candyes > 28:
             break
         print(f'there are {candyes} candies left\n')
 
+# Для двух игроков:
 # candyes = 58
 # print('За один ход можно забрать не более чем 28 конфет')
 # while candyes > 0:
