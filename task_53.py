@@ -34,21 +34,24 @@ def check_win(player, matr):
 
 def start_game():
     field = [['| 1 |','| 2 |','| 3 |'],['| 4 |','| 5 |','| 6 |'],['| 7 |','| 8 |','| 9 |']]
-    free_pos = ['1','2','3','4','5','6','7','8','9']
+    free_pos = ['1','2','3','4','5','6','7','8','9'] # # Для проверки ввода и свободной позиции
+
     while len(free_pos) > 0:
         for players in range(1, 3):
+
             show_field(field)
             pos_field = input(f'Player\'s {players} move! Choose number of field: ')
-            while pos_field not in free_pos:
+            while pos_field not in free_pos: # Проверка ввода и свободной позиции
                 pos_field = input('Choose free number of field: ')
             free_pos = list(filter(lambda x: x != pos_field, free_pos))
+
             field = write_pos(pos_field, players, field)
 
             if check_win(players, field):
+                show_field(field)
                 free_pos = []
                 break
             if len(free_pos) == 0:
                 print('Draw in the game!')
                 break
-
 start_game()

@@ -67,7 +67,7 @@ while candyes > 28:
             break
         print(f'there are {candyes} candies left\n')
 
-# Для двух игроков:
+# Для двух игроков, раз оба живые, жеребьевка первого хода пройдет в "реале" :)
 # candyes = 58
 # print('За один ход можно забрать не более чем 28 конфет')
 # while candyes > 0:
